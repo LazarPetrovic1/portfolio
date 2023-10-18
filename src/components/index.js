@@ -45,13 +45,13 @@ export const bgposright = {
 
 export const bgpostop = {
   initial: { backgroundPosition: "50% 50%" },
-  animate: { backgroundPosition: "50% 35%" },
+  animate: { backgroundPosition: "50% 65%" },
   exit: { backgroundPosition: "50% 50%" }
 }
 
 export const bgposbottom = {
   initial: { backgroundPosition: "50% 50%" },
-  animate: { backgroundPosition: "50% 65%" },
+  animate: { backgroundPosition: "50% 35%" },
   exit: { backgroundPosition: "50% 50%" }
 }
 

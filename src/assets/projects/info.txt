@@ -1,0 +1,40 @@
+Title: bloggerautviewapp
+Tech Stack: 
+FE: Vue 2 (Vuex, vue-router)
+BE: Express.js, PostgreSQL
+Sockets integrated.
+Features:
+- authorization & authentication (login & register)
+- input validation FE + BE
+- CRUD for blog posts with an image upload
+- filesystem: copying the file into a separate directory
+- success and error snack messages
+- comment system
+- notification system with sockets
+- changing user information
+- changing password
+- all non-public routes are protected and will throw a 401 Unauthorized error
+_________________________________________________________________________________________________________________________________________________
+Title: flourish-text-editor
+Tech Stack:
+Desktop: Electron
+FE: React
+Features:
+- welcome screen
+- open file
+- open folder as project
+- list files and directories on the left-hand side
+- icons beside files with certain extensions
+- open, edit, save and delete file
+- history of previous projects (clicking one of them will open it as a project in a new instance of the editor)
+- built-in commands for quick access to certain web apps on the internet (opens a new tab in a default browser and goes to the url)
+_________________________________________________________________________________________________________________________________________________
+Title: photobombth
+Tech Stack:
+Desktop: Electron
+FE: HTML, CSS, JavaScript
+Features:
+- requires camera privileges
+- displays a camera feed and a button to snap a picture
+- taking the picture saves it on the hard drive
+- can change various different filters

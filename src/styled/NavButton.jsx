@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-
 const num = "4.25rem";
+const numpx = 4.25 * 16;
 
 const NavButton = styled.button`
   color: white;
@@ -15,25 +15,32 @@ const NavButton = styled.button`
     top: 0;
     left: 0;
     width: 100vw;
+    visibility: visible;
+    display: block;
     height: ${num};
   `}
+  top: ${props => props.id === "bottom" ? `${props.viewport < props.webPageHeight ? (props.webPageHeight - numpx) : props.viewport - numpx}px` : null};
   ${props => props.id === "bottom" && `
-    bottom: 0;
     left: 0;
     width: 100vw;
+    visibility: visible;
+    display: block;
     height: ${num};
   `}
   ${props => props.id === "left" && `
     top: 0;
     left: 0;
     width: ${num};
-    height: 100vh;
-  `}
+    visibility: visible;
+    display: block;
+    `}
+    height: ${props => props.id === "left" || props.id === "right" ? `${props.viewport > props.webPageHeight ? props.viewport : props.webPageHeight}px` : null};
   ${props => props.id === "right" && `
     top: 0;
     right: 0;
     width: ${num};
-    height: 100vh;
+    visibility: visible;
+    display: block;
   `}
   top: ${props => props.top || null};
   left: ${props => props.left || null};

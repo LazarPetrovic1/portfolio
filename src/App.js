@@ -10,7 +10,7 @@ function App() {
       <AnimatePresence mode="wait">
         <Layout>
           <Routes key={location.pathname} location={location}>
-            <Route path='/' element={<Welcome />} />
+            <Route path='/portfolio' element={<Welcome />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<CV />} />

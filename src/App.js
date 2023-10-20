@@ -5,7 +5,6 @@ import { Layout } from './components';
 
 function App() {
   const location = useLocation();
-  console.log("LOCATION", location);
   return (
     <>
       <AnimatePresence mode="wait">

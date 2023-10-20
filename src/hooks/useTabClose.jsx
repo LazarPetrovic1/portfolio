@@ -3,7 +3,6 @@ import useEventListener from "./useEventListener";
 export default function useTabClose() {
   const handleTabClose = event => {
     event.preventDefault();
-    console.log('beforeunload event triggered');
     return (event.returnValue = 'Are you sure you want to exit?');
   };
   const handleTabCloseKeyboard = event => {

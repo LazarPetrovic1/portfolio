@@ -1,0 +1,52 @@
+import impulse1 from './impulse1.png'
+import impulse2 from './impulse2.png'
+import impulse3 from './impulse3.png'
+import impulse4 from './impulse4.png'
+import impulse5 from './impulse5.png'
+import impulse6 from './impulse6.png'
+import impulse7 from './impulse7.png'
+import impulse8 from './impulse8.png'
+import impulse9 from './impulse9.png'
+import impulse10 from './impulse10.png'
+import impulse11 from './impulse11.png'
+import impulse12 from './impulse12.png'
+import impulse13 from './impulse13.png'
+import impulse14 from './impulse14.png'
+import impulse15 from './impulse15.png'
+import impulse16 from './impulse16.png'
+import impulse17 from './impulse17.png'
+import impulse18 from './impulse18.png'
+import impulse19 from './impulse19.png'
+import impulse20 from './impulse20.png'
+import impulse21 from './impulse21.png'
+import impulse22 from './impulse22.png'
+import impulse23 from './impulse23.png'
+import impulse24 from './impulse24.png'
+import impulse25 from './impulse25.png'
+import impulse26 from './impulse26.png'
+import impulse27 from './impulse27.png'
+import impulse28 from './impulse28.png'
+import impulse29 from './impulse29.png'
+import impulse30 from './impulse30.png'
+import impulse31 from './impulse31.png'
+import impulse32 from './impulse32.png'
+import impulse33 from './impulse33.png'
+import impulse34 from './impulse34.png'
+import impulse35 from './impulse35.png'
+import impulse36 from './impulse36.png'
+import impulse37 from './impulse37.png'
+import impulse38 from './impulse38.png'
+import impulse39 from './impulse39.png'
+import impulse40 from './impulse40.png'
+import impulse41 from './impulse41.png'
+import impulse42 from './impulse42.png'
+import impulse43 from './impulse43.png'
+
+export {
+  impulse1, impulse2, impulse3, impulse4, impulse5, impulse6, impulse7, impulse8,
+  impulse9, impulse10, impulse11, impulse12, impulse13, impulse14, impulse15,
+  impulse16, impulse17, impulse18, impulse19, impulse20, impulse21, impulse22,
+  impulse23, impulse24, impulse25, impulse26, impulse27, impulse28, impulse29,
+  impulse30, impulse31, impulse32, impulse33, impulse34, impulse35, impulse36,
+  impulse37, impulse38, impulse39, impulse40, impulse41, impulse42, impulse43
+}

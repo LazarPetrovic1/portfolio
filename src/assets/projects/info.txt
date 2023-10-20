@@ -38,3 +38,22 @@ Features:
 - displays a camera feed and a button to snap a picture
 - taking the picture saves it on the hard drive
 - can change various different filters
+_________________________________________________________________________________________________________________________________________________
+Title: impulse
+Tech Stack:
+Desktop: Electron
+FE: React (Next.js)
+BE: 
+  - v1: Express, MongoDB
+  - v2: NestJS, PostgreSQL, TypeScript, mikro-orm
+Features:
+- authorization & authentication (login & register)
+- extensive settings customization (language, background, font, font-size, separate text- & background-colours)
+- animated canvas background
+- ability to open a terminal (or cmd prompt in windows) & add quick access links
+- custom titlebar, url bar and controls
+- public-facing API
+- built-in navigation shortcuts
+- change password capabilities
+- searching for people
+- accessing other people's profiles

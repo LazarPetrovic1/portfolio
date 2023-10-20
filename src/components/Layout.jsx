@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 
 const transition = { duration: 1 };
+const bcr = e => e.getBoundingClientRect();
 
 function Layout({ children }) {
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ function Layout({ children }) {
           navigate("/contact");
           left.blur();
         }
-        else left.focus()
+        else left.focus();
         break;
       case "ArrowRight":
       case "2":
@@ -53,7 +54,10 @@ function Layout({ children }) {
           navigate("/projects")
           top.blur();
         }
-        else top.focus()
+        else {
+          window.scrollTo(0, bcr(top).bottom, { behavior: 'smooth' });
+          top.focus();
+        }
         break;
       case "ArrowDown":
       case "3":
@@ -62,7 +66,10 @@ function Layout({ children }) {
           navigate("/resume")
           bottom.blur();
         }
-        else bottom.focus()
+        else {
+          window.scrollTo({ top: bcr(bottom).bottom, behavior: 'smooth' });
+          bottom.focus();
+        }
         break;
       case " ":
       case "Enter":

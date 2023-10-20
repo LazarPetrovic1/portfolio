@@ -74,7 +74,7 @@ function Layout({ children }) {
       case " ":
       case "Enter":
         if (location.pathname === "/") return;
-        navigate("/");
+        navigate("/portfolio");
         break;
       case "Escape":
         document.activeElement.blur();

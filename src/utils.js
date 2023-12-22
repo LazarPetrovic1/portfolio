@@ -2,7 +2,7 @@ import * as blogimgs from './assets/projects/blogger';
 import * as flourishimgs from './assets/projects/flourish-text-editor';
 import * as photoimgs from './assets/projects/photo-app';
 import * as impulseimgs from './assets/projects/impulse';
-
+export const overflow = { overflowY: "auto" };
 export const mapImages = (imgs) => Object.values(imgs).map(item => ({ original: item, thumbnail: item }));
 
 const blogEntries = mapImages(blogimgs);
@@ -75,5 +75,24 @@ export const projectinformation = {
       "searching for people",
       "accessing other people's profile",
     ]
+  }
+}
+
+export const generateTransforms = (side) => {
+  switch (side) {
+    case "front":
+      return `scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg)`;
+    case "back":
+      return `scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(180deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0) skewX(0deg) skewY(0deg)`;
+    case "left":
+      return `scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(90deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg)`;
+    case "right":
+      return `scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(-90deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg)`;
+    case "top":
+      return `scaleX(1) scaleY(1) scaleZ(1) rotateX(-90deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg)`;
+    case "bottom":
+      return `scaleX(1) scaleY(1) scaleZ(1) rotateX(90deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg)`;
+    default:
+      return `scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg)`;
   }
 }

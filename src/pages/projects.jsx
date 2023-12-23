@@ -1,7 +1,7 @@
 import { AnimatedPage } from "../components";
 import ReactImageGallery from 'react-image-gallery';
 import { projectinformation } from "../utils";
-import { ProjectText, ProjectTitle, ProjectContainer } from '../styled';
+import { ProjectText, ProjectTitle } from '../styled';
 
 const { blog, flourish, photoapp, impulse } = projectinformation;
 
@@ -15,7 +15,7 @@ function Projects() {
           For more information about corporate projects, please visit the <b>/about</b> or <b>/resume</b> routes.
         </p>
         <hr />
-        <ProjectContainer>
+        <div>
           <ProjectTitle>{blog.title}</ProjectTitle>
           <ReactImageGallery items={blog.images} />
           <ProjectText>
@@ -30,9 +30,9 @@ function Projects() {
             </div>
           </ProjectText>
           <hr />
-        </ProjectContainer>
+        </div>
         
-        <ProjectContainer>
+        <div>
           <ProjectTitle>{flourish.title}</ProjectTitle>
           <ReactImageGallery items={flourish.images} />
           <ProjectText>
@@ -47,10 +47,10 @@ function Projects() {
             </div>
           </ProjectText>
           <hr />
-        </ProjectContainer>
+        </div>
 
         
-        <ProjectContainer>
+        <div>
           <ProjectTitle>{photoapp.title}</ProjectTitle>
           <ReactImageGallery items={photoapp.images} />
           <ProjectText>
@@ -65,9 +65,9 @@ function Projects() {
             </div>
           </ProjectText>
           <hr />
-        </ProjectContainer>
+        </div>
 
-        <ProjectContainer>
+        <div>
           <ProjectTitle>{impulse.title}</ProjectTitle>
           <ReactImageGallery items={impulse.images} />
           <ProjectText>
@@ -83,7 +83,7 @@ function Projects() {
             </div>
           </ProjectText>
           <hr />
-        </ProjectContainer>
+        </div>
       </div>
     </AnimatedPage>
   )

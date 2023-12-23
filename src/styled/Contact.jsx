@@ -5,6 +5,7 @@ const Text = styled.span`margin-left: 1.2rem; font-size: 1.5rem;`
 const Holder = styled.p`
   display: flex;
   align-items: baseline;
+  word-break: break-word;
 `;
 
 export { Image, Text, Holder };

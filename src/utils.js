@@ -2,6 +2,7 @@ import * as blogimgs from './assets/projects/blogger';
 import * as flourishimgs from './assets/projects/flourish-text-editor';
 import * as photoimgs from './assets/projects/photo-app';
 import * as impulseimgs from './assets/projects/impulse';
+import * as playerimgs from './assets/projects/music-player'
 
 export const mapImages = (imgs) => Object.values(imgs).map(item => ({ original: item, thumbnail: item }));
 
@@ -9,6 +10,7 @@ const blogEntries = mapImages(blogimgs);
 const flourishEntries = mapImages(flourishimgs);
 const photoEntries = mapImages(photoimgs);
 const impulseEntries = mapImages(impulseimgs);
+const playerEntries = mapImages(playerimgs);
 
 export const projectinformation = {
   blog: {
@@ -74,6 +76,18 @@ export const projectinformation = {
       "change password capabilities",
       "searching for people",
       "accessing other people's profile",
+    ]
+  },
+  musicplayer: {
+    title: "Music Player & File Viewer",
+    images: playerEntries,
+    DE: "Desktop: Electron",
+    FE: "FE: React",
+    features: [
+      "file viewer",
+      "music player",
+      "canvas animations according to audio buffer data",
+      "image viewer"
     ]
   }
 }

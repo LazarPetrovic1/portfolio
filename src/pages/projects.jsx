@@ -3,7 +3,7 @@ import ReactImageGallery from 'react-image-gallery';
 import { projectinformation } from "../utils";
 import { ProjectText, ProjectTitle, ProjectContainer } from '../styled';
 
-const { blog, flourish, photoapp, impulse } = projectinformation;
+const { blog, flourish, photoapp, impulse, musicplayer } = projectinformation;
 
 function Projects() {
   return (
@@ -49,24 +49,6 @@ function Projects() {
           <hr />
         </ProjectContainer>
 
-        
-        <ProjectContainer>
-          <ProjectTitle>{photoapp.title}</ProjectTitle>
-          <ReactImageGallery items={photoapp.images} />
-          <ProjectText>
-            <div>
-              <p>Tech Stack:</p>
-              <p>{photoapp.DE}</p>
-              <p>{photoapp.FE}</p>
-              <p>Features</p>
-              <ul>
-                {photoapp.features.map((f, i) => <li key={i}>{f}</li>)}
-              </ul>
-            </div>
-          </ProjectText>
-          <hr />
-        </ProjectContainer>
-
         <ProjectContainer>
           <ProjectTitle>{impulse.title}</ProjectTitle>
           <ReactImageGallery items={impulse.images} />
@@ -79,6 +61,40 @@ function Projects() {
               <p>Features</p>
               <ul>
                 {impulse.features.map((f, i) => <li key={i}>{f}</li>)}
+              </ul>
+            </div>
+          </ProjectText>
+          <hr />
+        </ProjectContainer>
+
+        <ProjectContainer>
+          <ProjectTitle>{musicplayer.title}</ProjectTitle>
+          <ReactImageGallery items={musicplayer.images} />
+          <ProjectText>
+            <div>
+              <p>Tech Stack:</p>
+              <p>{musicplayer.DE}</p>
+              <p>{musicplayer.FE}</p>
+              <p>Features</p>
+              <ul>
+                {musicplayer.features.map((f, i) => <li key={i}>{f}</li>)}
+              </ul>
+            </div>
+          </ProjectText>
+          <hr />
+        </ProjectContainer>
+                
+        <ProjectContainer>
+          <ProjectTitle>{photoapp.title}</ProjectTitle>
+          <ReactImageGallery items={photoapp.images} />
+          <ProjectText>
+            <div>
+              <p>Tech Stack:</p>
+              <p>{photoapp.DE}</p>
+              <p>{photoapp.FE}</p>
+              <p>Features</p>
+              <ul>
+                {photoapp.features.map((f, i) => <li key={i}>{f}</li>)}
               </ul>
             </div>
           </ProjectText>

@@ -3,6 +3,8 @@ import * as flourishimgs from './assets/projects/flourish-text-editor';
 import * as photoimgs from './assets/projects/photo-app';
 import * as impulseimgs from './assets/projects/impulse';
 import * as playerimgs from './assets/projects/music-player'
+import * as seezimgs from './assets/projects/seez-assignment'
+import * as spyimgs from './assets/projects/raspberry-spy'
 
 export const mapImages = (imgs) => Object.values(imgs).map(item => ({ original: item, thumbnail: item }));
 
@@ -11,6 +13,8 @@ const flourishEntries = mapImages(flourishimgs);
 const photoEntries = mapImages(photoimgs);
 const impulseEntries = mapImages(impulseimgs);
 const playerEntries = mapImages(playerimgs);
+const seezEntries = mapImages(seezimgs);
+const spyEntries = mapImages(spyimgs);
 
 export const projectinformation = {
   blog: {
@@ -88,6 +92,32 @@ export const projectinformation = {
       "music player",
       "canvas animations according to audio buffer data",
       "image viewer"
+    ]
+  },
+  seezassignment: {
+    title: "Seez Assignment",
+    images: seezEntries,
+    FE: "FE: React TypeScript",
+    BE: "BE: NestJS, PostgreSQL, mikro-orm, TypeScript",
+    features: [
+      "admin and client panels on the front end",
+      "authorization & authentication (login & register)",
+      "ability to upload, read and remove images (as stored in a separate dir on BE)",
+      "alert/logging/message system",
+      "granular control over the application on the admin panel",
+      "completed for an assignment as specified here:"
+    ],
+    links: [["https://seez.notion.site/Tech-Assessment-Full-Stack-Engineer-8125b365b3aa4bf6b6c091bad13c3d62", "Go to assignment"]]
+  },
+  raspberrySpy: {
+    title: "Raspberry Spy",
+    images: spyEntries,
+    FE: "FE: Raspberry Pi model 3A+; Raspberry Pi modular camera v3; Kali Linux VM via Windows 10",
+    BE: "BE: Raspberry PI OS (32-bit)",
+    features: [
+      "secure-shelling enabled (ssh)",
+      "secure copy enabled (scp)",
+      "can take images via terminal"
     ]
   }
 }

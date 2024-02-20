@@ -3,7 +3,7 @@ import ReactImageGallery from 'react-image-gallery';
 import { projectinformation } from "../utils";
 import { ProjectText, ProjectTitle, ProjectContainer } from '../styled';
 
-const { blog, flourish, photoapp, impulse, musicplayer } = projectinformation;
+const { blog, flourish, photoapp, impulse, musicplayer, seezassignment, raspberrySpy } = projectinformation;
 
 function Projects() {
   return (
@@ -26,6 +26,25 @@ function Projects() {
               <p>Features</p>
               <ul>
                 {blog.features.map((f, i) => <li key={i}>{f}</li>)}
+              </ul>
+            </div>
+          </ProjectText>
+          <hr />
+        </ProjectContainer>
+        <ProjectContainer>
+          <ProjectTitle>{seezassignment.title}</ProjectTitle>
+          <ReactImageGallery items={seezassignment.images} />
+          <ProjectText>
+            <div>
+              <p>Tech Stack:</p>
+              <p>{seezassignment.FE}</p>
+              <p>{seezassignment.BE}</p>
+              <p>Features</p>
+              <ul>
+                <>
+                  {seezassignment.features.map((f, i) => <li key={i}>{f}</li>)}
+                  {seezassignment.links.map((f, i) => <a href={f[0]} rel="noreferrer" target="_blank" key={i}>{f[1]}</a>)}
+                </>
               </ul>
             </div>
           </ProjectText>
@@ -95,6 +114,22 @@ function Projects() {
               <p>Features</p>
               <ul>
                 {photoapp.features.map((f, i) => <li key={i}>{f}</li>)}
+              </ul>
+            </div>
+          </ProjectText>
+          <hr />
+        </ProjectContainer>
+        <ProjectContainer>
+          <ProjectTitle>{raspberrySpy.title}</ProjectTitle>
+          <ReactImageGallery items={raspberrySpy.images} />
+          <ProjectText>
+            <div>
+              <p>Tech Stack:</p>
+              <p>{raspberrySpy.DE}</p>
+              <p>{raspberrySpy.FE}</p>
+              <p>Features</p>
+              <ul>
+                {raspberrySpy.features.map((f, i) => <li key={i}>{f}</li>)}
               </ul>
             </div>
           </ProjectText>

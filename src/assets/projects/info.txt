@@ -57,3 +57,26 @@ Features:
 - change password capabilities
 - searching for people
 - accessing other people's profiles
+_________________________________________________________________________________________________________________________________________________
+Title: seez-assignment
+Tech Stack:
+FE: React TypeScript
+BE: NestJS, PostgreSQL, mikro-orm, TypeScript
+Features:
+- admin and client panels on the front end
+- authorization & authentication (login & register)
+- ability to upload, read and remove images (on the BE folder)
+- alert/logging/message system
+- granular control over the application on the admin panel
+- completed for an assignment as specified here: https://seez.notion.site/Tech-Assessment-Full-Stack-Engineer-8125b365b3aa4bf6b6c091bad13c3d62
+_________________________________________________________________________________________________________________________________________________
+Title: raspberry-spy
+Tech Stack:
+FE: Raspberry Pi model 3A+; Raspberry Pi modular camera v3; Kali Linux VM via Windows 10
+BE: Raspberry PI OS (32-bit)
+Features:
+- secure-shelling enabled (ssh)
+- secure copy enabled (scp)
+- can take images via terminal
+
+# Image dimensions: 1600 x 848

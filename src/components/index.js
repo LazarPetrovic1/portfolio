@@ -1,5 +1,6 @@
 import AnimatedPage from "./AnimatedPage";
 import Layout from "./Layout";
+import Nav from "./Nav";
 
 export const animRight = {
   initial: { opacity: 0, x: -100 },
@@ -61,4 +62,4 @@ export const bgposmain = {
   exit: { backgroundPosition: "50% 50%" }
 }
 
-export { AnimatedPage, Layout };
+export { AnimatedPage, Layout, Nav };

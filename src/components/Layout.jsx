@@ -29,7 +29,6 @@ function Layout({ children }) {
       document.getElementById("bottom")
     ];
     switch (e.key) {
-      case "ArrowLeft":
       case "4":
         if (location.pathname === "/contact") return;
         if (document.activeElement === left) {
@@ -38,7 +37,6 @@ function Layout({ children }) {
         }
         else left.focus();
         break;
-      case "ArrowRight":
       case "2":
         if (location.pathname === "/about") return;
         if (document.activeElement === right) {
@@ -47,7 +45,6 @@ function Layout({ children }) {
         }
         else right.focus()
         break;
-      case "ArrowUp":
       case "1":
         if (location.pathname === "/projects") return;
         if (document.activeElement === top) {
@@ -59,7 +56,6 @@ function Layout({ children }) {
           top.focus();
         }
         break;
-      case "ArrowDown":
       case "3":
         if (location.pathname === "/resume") return;
         if (document.activeElement === bottom) {
@@ -72,7 +68,6 @@ function Layout({ children }) {
         }
         break;
       case " ":
-      case "Enter":
         if (location.pathname === "/") return;
         navigate("/portfolio");
         break;
@@ -109,13 +104,13 @@ function Layout({ children }) {
         <NavButton viewport={window.innerHeight} webPageHeight={containerDims.height + footerDims.height} onClick={(e) => handleClick(e, "/about")} id="right" axis="y" top={0} right={0} title="About me">About me</NavButton>
         <Footer ref={footer} location={location.pathname} webPageHeight={containerDims.height}>
           <footer>
-            <div style={{ textAlign: 'center' }}>There is no navigation bar. Navigate using the keyboard as such:</div>
             <div>
-              <p>The up arrow (&#x2191;) or number one (1) to go to <b>Projects</b>.</p>
-              <p>The right arrow (&#x2192;) or number two (2) to go to <b>About me</b>.</p>
-              <p>The down arrow (&#x2193;) or number three (3) to go to <b>my Resume</b>.</p>
-              <p>The left arrow (&#x2190;) or number four (4) to go to <b>Contact info</b>.</p>
-              <p>Press <i>Spacebar</i> or <i>Enter</i> to return to the <b>Main page</b>.</p>
+              <p>Additional navigation:</p>
+              <p>Number one (1) to go to <b>Projects</b>.</p>
+              <p>Number two (2) to go to <b>About me</b>.</p>
+              <p>Number three (3) to go to <b>my Resume</b>.</p>
+              <p>Number four (4) to go to <b>Contact info</b>.</p>
+              <p>Press <i>Spacebar</i> to return to the <b>Main page</b>.</p>
             </div>
           </footer>
         </Footer>

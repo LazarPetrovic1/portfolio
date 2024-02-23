@@ -1,7 +1,8 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { About, CV, Contact, Projects, Welcome } from './pages';
 import { AnimatePresence } from 'framer-motion';
-import { Layout } from './components';
+import { Layout, Nav } from './components';
+
 
 function App() {
   const location = useLocation();
@@ -9,6 +10,7 @@ function App() {
     <>
       <AnimatePresence mode="wait">
         <Layout>
+          <Nav />
           <Routes key={location.pathname} location={location}>
             <Route path='/portfolio' element={<Welcome />} />
             <Route path="/about" element={<About />} />

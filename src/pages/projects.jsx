@@ -1,6 +1,6 @@
 import { AnimatedPage } from "../components";
 import ReactImageGallery from 'react-image-gallery';
-import { projectinformation } from "../utils";
+import { projectinformation, scrollerBottomPushBack } from "../utils";
 import { ProjectText, ProjectTitle, ProjectContainer } from '../styled';
 
 const { blog, flourish, photoapp, impulse, musicplayer, seezassignment, raspberrySpy } = projectinformation;
@@ -8,7 +8,7 @@ const { blog, flourish, photoapp, impulse, musicplayer, seezassignment, raspberr
 function Projects() {
   return (
     <AnimatedPage>
-      <div className="text-holder scroller">
+      <div className="text-holder scroller" style={{ maxHeight: scrollerBottomPushBack, paddingRight: '1.5rem' }}>
         <h1>Projects</h1>
         <p className="lead">
           This section is dedicated to the projects I've written in my spare time for leisure.<br />

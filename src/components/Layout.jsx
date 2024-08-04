@@ -3,7 +3,8 @@ import { useEventListener, useSize, useTabClose } from "../hooks";
 import { Footer, NavButton } from "../styled";
 import { bgpostop, bgposbottom, bgposleft, bgposright, bgposmain } from '.';
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import background from '../assets/bg.mp4';
 
 const transition = { duration: 1 };
 const bcr = e => e.getBoundingClientRect();
@@ -40,8 +41,8 @@ function Layout({ children }) {
       case "2":
         if (location.pathname === "/about") return;
         if (document.activeElement === right) {
-        navigate("/about")
-        right.blur();
+          navigate("/about")
+          right.blur();
         }
         else right.focus()
         break;
@@ -79,6 +80,12 @@ function Layout({ children }) {
     }
   });
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname]);
+
+  console.log("LOUKEJSN", location);
+
   const handleClick = (e, route) => {
     e.preventDefault();
     if (location.pathname === route) {
@@ -114,6 +121,7 @@ function Layout({ children }) {
             </div>
           </footer>
         </Footer>
+        <video src={background} className="video_bg" autoPlay loop muted />
       </div>
     </motion.main>
   )

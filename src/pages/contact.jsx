@@ -1,5 +1,5 @@
 import { AnimatedPage } from "../components";
-import { email, github, linkedin, person, phone, stackoverflow, youtube, location } from '../assets/icons';
+import { email, github, linkedin, person, phone, stackoverflow, youtube, location, internet } from '../assets/icons';
 import { Image, Text, Holder } from "../styled";
 
 function Contact() {
@@ -47,6 +47,12 @@ function Contact() {
           <Image src={stackoverflow} alt="StackOverflow" title="StackOverflow" />
           <Text>
             <a target="_blank" rel="noreferrer" href="https://stackoverflow.com/users/13454247/lazar-petrovic">https://stackoverflow.com/users/13454247/lazar-petrovic</a>
+          </Text>
+        </Holder>
+        <Holder>
+          <Image src={internet} alt="Resume (Web format)" title="Resume (Web format)" />
+          <Text>
+            <a target="_blank" rel="noreferrer" href="https://lazarpetrovic1.github.io/web-resume/">https://lazarpetrovic1.github.io/web-resume/</a>
           </Text>
         </Holder>
       </div>

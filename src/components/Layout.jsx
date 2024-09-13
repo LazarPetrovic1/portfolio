@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import { useEventListener, useSize, useTabClose } from "../hooks";
+import { useEventListener, useSize } from "../hooks";
 import { Footer, NavButton } from "../styled";
 import { bgpostop, bgposbottom, bgposleft, bgposright, bgposmain } from '.';
 import { motion } from "framer-motion";
@@ -20,7 +20,7 @@ function Layout({ children }) {
     location.pathname === "/resume" ? bgposbottom :
     location.pathname === "/contact" ? bgposleft :
     location.pathname === "/about" ? bgposright : bgposmain;
-  useTabClose();
+  // useTabClose();
   useEventListener("keydown", e => {
     e.preventDefault();
     const [left, right, top, bottom] = [
@@ -83,8 +83,6 @@ function Layout({ children }) {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [location.pathname]);
-
-  console.log("LOUKEJSN", location);
 
   const handleClick = (e, route) => {
     e.preventDefault();

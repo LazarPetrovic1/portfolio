@@ -1,4 +1,5 @@
 import useEventListener from "./useEventListener";
 import useSize from "./useSize";
 import useTabClose from "./useTabClose";
-export { useTabClose, useEventListener, useSize };
+import useWindowSize from "./useWindowSize";
+export { useWindowSize, useTabClose, useEventListener, useSize };

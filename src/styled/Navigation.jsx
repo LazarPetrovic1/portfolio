@@ -28,6 +28,14 @@ const NavListItem = styled.li`
       text-decoration: underline;
     }
   }
+  @media (max-width: 620px) {
+    font-size: 0.8rem;
+  }
+  @media (max-width: 410px) {
+    & > a {
+      padding: 0.2rem 0.4rem;
+    }
+  }
 `;
 
 export { Navigation, NavList, NavListItem };

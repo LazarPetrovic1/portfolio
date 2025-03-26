@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import { useEventListener, useSize } from "../hooks";
+import { useEventListener, useSize, useWindowSize } from "../hooks";
 import { Footer, NavButton } from "../styled";
 import { bgpostop, bgposbottom, bgposleft, bgposright, bgposmain } from '.';
 import { motion } from "framer-motion";
@@ -10,6 +10,7 @@ const transition = { duration: 1 };
 const bcr = e => e.getBoundingClientRect();
 
 function Layout({ children }) {
+  const { width } = useWindowSize();
   const navigate = useNavigate();
   const location = useLocation();
   const container = useRef(null);
@@ -107,18 +108,20 @@ function Layout({ children }) {
         <NavButton viewport={window.innerHeight} webPageHeight={containerDims.height + footerDims.height} onClick={(e) => handleClick(e, "/resume")} id="bottom" axis="x" bottom={0} left={0} title="My Resume">My Resume</NavButton>
         <NavButton viewport={window.innerHeight} webPageHeight={containerDims.height + footerDims.height} onClick={(e) => handleClick(e, "/contact")} id="left" axis="y" top={0} left={0} title="Contact information">Contact information</NavButton>
         <NavButton viewport={window.innerHeight} webPageHeight={containerDims.height + footerDims.height} onClick={(e) => handleClick(e, "/about")} id="right" axis="y" top={0} right={0} title="About me">About me</NavButton>
-        <Footer ref={footer} location={location.pathname} webPageHeight={containerDims.height}>
-          <footer>
-            <div>
-              <p>Additional navigation:</p>
-              <p>Number one (1) to go to <b>Projects</b>.</p>
-              <p>Number two (2) to go to <b>About me</b>.</p>
-              <p>Number three (3) to go to <b>my Resume</b>.</p>
-              <p>Number four (4) to go to <b>Contact info</b>.</p>
-              <p>Press <i>Spacebar</i> to return to the <b>Main page</b>.</p>
-            </div>
-          </footer>
-        </Footer>
+        {width >= 1100 && (
+          <Footer ref={footer} location={location.pathname} webPageHeight={containerDims.height}>
+            <footer>
+              <div>
+                <p>Additional navigation:</p>
+                <p>Number one (1) to go to <b>Projects</b>.</p>
+                <p>Number two (2) to go to <b>About me</b>.</p>
+                <p>Number three (3) to go to <b>my Resume</b>.</p>
+                <p>Number four (4) to go to <b>Contact info</b>.</p>
+                <p>Press <i>Spacebar</i> to return to the <b>Main page</b>.</p>
+              </div>
+            </footer>
+          </Footer>
+        )}
         <video src={background} className="video_bg" autoPlay loop muted />
       </div>
     </motion.main>

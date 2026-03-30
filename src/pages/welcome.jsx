@@ -22,15 +22,16 @@ function Welcome() {
           tabIndex={0}
           style={{ ...center, ...h3, maxWidth: '1000px', margin: 'auto' }}
           aria-labelledby={`
-            I'm a Senior Front-End engineer with a couple of years of experience working for a number of different companies with vastly different work cultures.
-            And I post some videos related to Web Development as a hobby.
-            That's all there is to it!.
+            I'm a Senior Frontend & Full-Stack Engineer with 8+ years of experience building scalable SaaS platforms using React, Next.js,
+            TypeScript, Node.js and Electron.js. Proven track record delivering high-performance, accessible, and AI-powered web applications in Agile
+            environments. Experienced in architecting distributed systems, optimizing frontend performance, and driving measurable
+            improvements in user engagement, system reliability, and development velocity.
           `}
         >
-          I'm a Senior Front-End engineer with a couple of years of experience working for a number of different companies with vastly different work cultures.
-          <br />
-          And I post some videos related to Web Development as a hobby.
-          That's all there is to it!.
+          I'm a Senior Frontend & Full-Stack Engineer with 8+ years of experience building scalable SaaS platforms using React, Next.js,
+          TypeScript, Node.js and Electron.js. Proven track record delivering high-performance, accessible, and AI-powered web applications in Agile
+          environments. Experienced in architecting distributed systems, optimizing frontend performance, and driving measurable
+          improvements in user engagement, system reliability, and development velocity.
         </h3>
       </div>
     </AnimatedPage>

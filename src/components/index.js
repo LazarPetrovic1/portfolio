@@ -1,5 +1,6 @@
 import AnimatedPage from "./AnimatedPage";
 import Layout from "./Layout";
+import Accordion from "./Accordion";
 import Nav from "./Nav";
 
 export const animRight = {
@@ -62,4 +63,4 @@ export const bgposmain = {
   exit: { backgroundPosition: "50% 50%" }
 }
 
-export { AnimatedPage, Layout, Nav };
+export { AnimatedPage, Layout, Nav, Accordion };

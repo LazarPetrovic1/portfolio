@@ -1,5 +1,5 @@
 import { AnimatedPage } from "../components";
-import { email, github, linkedin, person, phone, stackoverflow, youtube, location, internet } from '../assets/icons';
+import { email, github, linkedin, person, phone, stackoverflow, youtube, location, internet, chess } from '../assets/icons';
 import { Image, Text, Holder, Hr } from "../styled";
 import { useWindowSize } from "../hooks";
 
@@ -26,7 +26,7 @@ function Contact() {
         {width <= 1100 && <Hr />}
         <Holder>
           <Image src={location} alt="Location" title="Location" />
-          <Text>111000, Niš, Serbia (Remote)</Text>
+          <Text>18000, Niš, Serbia (Remote)</Text>
         </Holder>
         {width <= 1100 && <Hr />}
         <Holder>
@@ -63,6 +63,12 @@ function Contact() {
           <Image src={internet} alt="Resume (Web format)" title="Resume (Web format)" />
           <Text>
             <a target="_blank" rel="noreferrer" href="https://lazarpetrovic1.github.io/web-resume/">https://lazarpetrovic1.github.io/web-resume/</a>
+          </Text>
+        </Holder>
+        <Holder>
+          <Image src={chess} alt="chess.com" title="Play a game with me!" />
+          <Text>
+            <a target="_blank" rel="noreferrer" href="https://www.chess.com/member/blablablabl4">https://www.chess.com/member/blablablabl4</a>
           </Text>
           {/* {width <= 1100 && <Hr />} */}
         </Holder>

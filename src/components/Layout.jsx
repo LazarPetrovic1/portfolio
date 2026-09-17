@@ -21,6 +21,7 @@ function Layout({ children }) {
     location.pathname === "/resume" ? bgposbottom :
     location.pathname === "/contact" ? bgposleft :
     location.pathname === "/about" ? bgposright : bgposmain;
+  console.log("DIMS", { containerDims, footerDims });
   // useTabClose();
   useEventListener("keydown", e => {
     e.preventDefault();
@@ -108,7 +109,7 @@ function Layout({ children }) {
         <NavButton viewport={window.innerHeight} webPageHeight={containerDims.height + footerDims.height} onClick={(e) => handleClick(e, "/resume")} id="bottom" axis="x" bottom={0} left={0} title="My Resume">My Resume</NavButton>
         <NavButton viewport={window.innerHeight} webPageHeight={containerDims.height + footerDims.height} onClick={(e) => handleClick(e, "/contact")} id="left" axis="y" top={0} left={0} title="Contact information">Contact information</NavButton>
         <NavButton viewport={window.innerHeight} webPageHeight={containerDims.height + footerDims.height} onClick={(e) => handleClick(e, "/about")} id="right" axis="y" top={0} right={0} title="About me">About me</NavButton>
-        {width >= 1100 && (
+        {width >= 1100 && location.pathname !== "/contact" && (
           <Footer ref={footer} location={location.pathname} webPageHeight={containerDims.height}>
             <footer>
               <div>

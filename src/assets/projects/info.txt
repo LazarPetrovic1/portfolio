@@ -80,3 +80,25 @@ Features:
 - can take images via terminal
 
 # Image dimensions: 1600 x 848
+_________________________________________________________________________________________________________________________________________________
+Title: zeitmeister
+Tech Stack:
+FE: React JavaScript
+Desktop: Electron
+Features:
+- add events to calendar (with some additional metadata)
+- event analytics
+- calendar features (switch between month, week, business week, day and weekly agenda)
+- the Eisenhower matrix distribution (urgent/important/both/neither)
+- report generation in CSV, JSON, Markdown and PDF
+_________________________________________________________________________________________________________________________________________________
+Title: financier
+Tech Stack:
+FE: React JavaScript
+Desktop: Electron
+Features:
+- scour data about a country (or group of countries) [socio-economic, cultural, etc]
+- graph visualisation
+- financial status tracker (local and global) based on data provided
+- report generation in JSON, CSV and PDF
+_________________________________________________________________________________________________________________________________________________

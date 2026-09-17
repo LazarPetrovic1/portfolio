@@ -10,7 +10,6 @@ import { useEffect } from "react";
 
 function CV() {
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
-  console.log("DLOPII", defaultLayoutPluginInstance);
   useEffect(() => {
     document.getElementById("main-navigation").scrollIntoView();
   }, [])

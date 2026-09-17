@@ -4,6 +4,7 @@ import { Image, Text, Holder } from './Contact'
 import AboutSection from "./About";
 import { ProjectText, ProjectTitle, ProjectContainer } from './Projects'
 import { NavList, NavListItem, Navigation } from "./Navigation";
+import { Collapsible, TitleContainer, ContentContainer } from "./Accordion";
 import styled from "styled-components";
 
 export const Hr = styled.hr`
@@ -28,5 +29,8 @@ export {
   ProjectContainer,
   NavList,
   NavListItem,
-  Navigation
+  Navigation,
+  Collapsible,
+  TitleContainer,
+  ContentContainer
 };

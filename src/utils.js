@@ -5,6 +5,8 @@ import * as impulseimgs from './assets/projects/impulse';
 import * as playerimgs from './assets/projects/music-player'
 import * as seezimgs from './assets/projects/seez-assignment'
 import * as spyimgs from './assets/projects/raspberry-spy'
+import * as finImages from './assets/projects/financier'
+import * as zeitImages from './assets/projects/zeitmeister'
 
 export const mapImages = (imgs) => Object.values(imgs).map(item => ({ original: item, thumbnail: item }));
 
@@ -15,6 +17,8 @@ const impulseEntries = mapImages(impulseimgs);
 const playerEntries = mapImages(playerimgs);
 const seezEntries = mapImages(seezimgs);
 const spyEntries = mapImages(spyimgs);
+const finEntries = mapImages(finImages);
+const zeitEntries = mapImages(zeitImages)
 
 export const projectinformation = {
   blog: {
@@ -61,6 +65,31 @@ export const projectinformation = {
       "displays a camera feed and a button to snap a picture",
       "taking the picture saves it on the hard drive",
       "can change various different filters",
+    ]
+  },
+  financier: {
+    title: "Financier",
+    images: finEntries,
+    DE: "Desktop: Electron",
+    FE: "FE: React",
+    features: [
+      "scour data about a country (or group of countries) [socio-economic, cultural, etc]",
+      "graph visualisation",
+      "financial status tracker (local and global) based on data provided",
+      "report generation in JSON, CSV and PDF"
+    ]
+  },
+  zeitmeister: {
+    title: "Zeitmeister",
+    images: zeitEntries,
+    DE: "Desktop: Electron",
+    FE: "FE: React",
+    features: [
+      "add events to calendar (with some additional metadata)",
+      "event analytics",
+      "calendar features (switch between month, week, business week, day and weekly agenda)",
+      "the Eisenhower matrix distribution (urgent/important/both/neither)",
+      "report generation in CSV, JSON, Markdown and PDF"
     ]
   },
   impulse: {

@@ -7,5 +7,6 @@ import youtube from './youtube.svg'
 import location from './location.svg'
 import person from './person.svg'
 import internet from './internet.svg'
+import chess from './chess.svg'
 
-export { internet, email, github, linkedin, phone, stackoverflow, youtube, location, person };
+export { internet, email, github, linkedin, phone, stackoverflow, youtube, location, person, chess };

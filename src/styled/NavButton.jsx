@@ -29,17 +29,18 @@ const NavButton = styled.button`
   `}
   ${props => props.id === "left" && `
     top: 0;
+    height: 100vh;
     left: 0;
     width: ${num};
     visibility: visible;
     display: block;
     `}
-    height: ${props => props.id === "left" || props.id === "right" ? `${props.viewport > props.webPageHeight ? props.viewport : props.webPageHeight}px` : null};
   ${props => props.id === "right" && `
     top: 0;
     right: 0;
     width: ${num};
     visibility: visible;
+    height: 100vh;
     display: block;
   `}
   top: ${props => props.top || null};
